@@ -4,11 +4,28 @@ html{
 
 .header-name{
     display: flex;
+    justify-content: space-between;
+}
 
+
+h2:hover{
+    color: #72519b;
+    transition: .3s ease-out;
+}
+
+.subtitle-header{
+    margin-top: -20px;
+}
+
+.about-me-title{
+    margin-top: 65px;
+    margin-bottom: -35px;
 }
 
 .about-me{
     display: flex;
+    padding: 20px;
+    justify-content: space-around;
 }
 
 .cat-gif{
