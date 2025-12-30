@@ -1,9 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router';
+import App from './App.jsx';
+//import './styles.css';
 
-const msg = "hellooooo!!!";
-const msgHeader = <h1>{msg}</h1>
-const msgElem = React.createElement(msgHeader);
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(msgElem);
+createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <StrictMode>
+      <App />
+    </StrictMode>
+  </BrowserRouter>
+)

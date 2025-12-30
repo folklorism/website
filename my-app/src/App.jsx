@@ -1,13 +1,9 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-import App from './App.jsx';
-import './styles.css';
-
-createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <StrictMode>
-      <App />
-    </StrictMode>
-  </BrowserRouter>
-)
+export function App(){
+  const msg = "hellooooo!!!";
+  const msgHeader = <h1>{msg}</h1>
+  const msgElem = React.createElement(msgHeader);
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+}
